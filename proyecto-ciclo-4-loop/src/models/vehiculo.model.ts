@@ -9,7 +9,7 @@ export class Vehiculo extends Entity {
     id: true,
     generated: false,
   })
-  VehiculoId?: string;
+  VehiculoId: string;
 
   @property({
     type: 'string',
