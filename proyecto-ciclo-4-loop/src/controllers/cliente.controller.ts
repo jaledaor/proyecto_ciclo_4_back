@@ -31,13 +31,6 @@ export class ClienteController {
     description: 'Cliente model instance',
     content: {'application/json': {schema: getModelSchemaRef(Cliente)}},
   })
-  async error() {
-    throw {
-      code: 500,
-      message: "Error en la ejecución",
-      name: "Ocurrió un error al insertar"
-    }
-  }
   async create(
     @requestBody({
       content: {
