@@ -18,7 +18,7 @@ export class Revision extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    required: false,
   })
   FechaSalida: string;
 
@@ -30,16 +30,19 @@ export class Revision extends Entity {
 
   @property({
     type: 'string',
+    required: false,
   })
   vehiculoId?: string;
 
   @property({
     type: 'string',
+    required: false,
   })
   repuestoId?: string;
 
   @property({
     type: 'string',
+    required: false,
   })
   mecanicoId?: string;
 
